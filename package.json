@@ -1,0 +1,15 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"cd server && npm run dev\" \"cd application && npm run start\"",
+    "installDeps": "concurrently \"npm i\" \"cd server && npm i\" \"cd application && npm i\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
